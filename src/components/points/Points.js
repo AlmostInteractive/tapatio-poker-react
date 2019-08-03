@@ -1,4 +1,5 @@
 import React from 'react';
+import './Points.css';
 
 class Points extends React.Component {
     constructor(props) {

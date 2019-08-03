@@ -1,4 +1,5 @@
 import React from 'react';
+import './Discard.css';
 import Config from "../../Config";
 
 class Discard extends React.Component {
