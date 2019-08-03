@@ -96,6 +96,7 @@ class App extends React.Component {
 
         return (
             <div>
+                <h1>Tapatio Poker</h1>
                 <div id="game_board">
                     <Deck id='deck' ref={this.deck}/>
                     <Hand id='my_hand' ref={this.player.hand} player={true} onSelected={this.handleCardClick}/>
