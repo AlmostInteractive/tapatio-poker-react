@@ -1,0 +1,22 @@
+.points {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+    left: 50%;
+}
+
+.points .final {
+    color: red;
+}
+
+#my_points {
+    bottom: 110px;
+}
+
+#cpu_points {
+    top: 110px;
+}
+

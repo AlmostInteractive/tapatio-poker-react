@@ -1,0 +1,14 @@
+.played {
+    position: absolute;
+    width: 282px;
+    height: 97px;
+    right: 0;
+}
+
+#my_played {
+    bottom: 50px;
+}
+
+#cpu_played {
+    top: 50px;
+}

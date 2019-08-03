@@ -1,0 +1,16 @@
+.hand {
+    position: absolute;
+    width: 415px;
+    height: 97px;
+    text-align: center;
+    left: 140px
+}
+
+#my_hand {
+    bottom: 0;
+}
+
+#cpu_hand {
+    top: 0;
+}
+

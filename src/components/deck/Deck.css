@@ -1,0 +1,8 @@
+#deck {
+    position: absolute;
+    width: 87px;
+    height: 97px;
+    top: 50%;
+    right: 300px;
+    transform: translateY(-50%);
+}
