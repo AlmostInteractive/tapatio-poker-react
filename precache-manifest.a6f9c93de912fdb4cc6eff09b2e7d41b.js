@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "307b1456bcf2539d8f1b1a72220938c3",
+    "revision": "230f7cff52838f9b0743cf76f88af870",
     "url": "/tapatio-poker-react/index.html"
   },
   {
-    "revision": "9f941f3085d35b37fb98",
-    "url": "/tapatio-poker-react/static/css/main.2178eae3.chunk.css"
+    "revision": "ee2a0cdd76f026721a79",
+    "url": "/tapatio-poker-react/static/css/main.581b8f95.chunk.css"
   },
   {
     "revision": "9eee67cf782a38d35aeb",
     "url": "/tapatio-poker-react/static/js/2.d6a534e5.chunk.js"
   },
   {
-    "revision": "9f941f3085d35b37fb98",
+    "revision": "ee2a0cdd76f026721a79",
     "url": "/tapatio-poker-react/static/js/main.df5af0f1.chunk.js"
   },
   {

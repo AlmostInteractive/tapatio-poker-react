@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tapatio-poker-react/static/css/main.2178eae3.chunk.css",
+    "main.css": "/tapatio-poker-react/static/css/main.581b8f95.chunk.css",
     "main.js": "/tapatio-poker-react/static/js/main.df5af0f1.chunk.js",
     "main.js.map": "/tapatio-poker-react/static/js/main.df5af0f1.chunk.js.map",
     "runtime~main.js": "/tapatio-poker-react/static/js/runtime~main.61cf3600.js",
@@ -8,8 +8,8 @@
     "static/js/2.d6a534e5.chunk.js": "/tapatio-poker-react/static/js/2.d6a534e5.chunk.js",
     "static/js/2.d6a534e5.chunk.js.map": "/tapatio-poker-react/static/js/2.d6a534e5.chunk.js.map",
     "index.html": "/tapatio-poker-react/index.html",
-    "precache-manifest.af93ef880e16d28bdd07425c697be58f.js": "/tapatio-poker-react/precache-manifest.af93ef880e16d28bdd07425c697be58f.js",
+    "precache-manifest.a6f9c93de912fdb4cc6eff09b2e7d41b.js": "/tapatio-poker-react/precache-manifest.a6f9c93de912fdb4cc6eff09b2e7d41b.js",
     "service-worker.js": "/tapatio-poker-react/service-worker.js",
-    "static/css/main.2178eae3.chunk.css.map": "/tapatio-poker-react/static/css/main.2178eae3.chunk.css.map"
+    "static/css/main.581b8f95.chunk.css.map": "/tapatio-poker-react/static/css/main.581b8f95.chunk.css.map"
   }
 }
