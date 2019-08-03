@@ -1,7 +1,8 @@
 {
   "name": "tapatio-poker-react",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "homepage":"https://almostinteractive.github.io/tapatio-poker-react",
+  "private": false,
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -15,6 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
