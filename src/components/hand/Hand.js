@@ -1,4 +1,5 @@
 import React from 'react';
+import './Hand.css';
 
 class Hand extends React.Component {
     constructor(props) {
@@ -10,6 +11,39 @@ class Hand extends React.Component {
         };
     }
 
+    render() {
+        const cards = this.state.cards;
+
+        const renderCards = () => {
+            const output = [];
+            for (let i = 0; i < cards.length; i++) {
+                const {front, back} = cards[i];
+                const graphic = this.props.player ? front : back;
+                const isSelected = this.state.selected.indexOf(i) !== -1;
+                const card =
+                    <div className={"card spread" + (isSelected ? " selected" : "")} key={i}>
+                        <img src={'/images/cards/' + graphic}
+                             className="card" alt="card"
+                             onClick={
+                                 this.props.onSelected
+                                     ? () => this.props.onSelected(i)
+                                     : null}/>
+                    </div>;
+                output.push(card);
+            }
+            return output;
+        };
+
+        return (
+            <div id={`${this.props.id}`} className='hand'>
+                {renderCards()}
+            </div>
+        );
+    }
+
+
+    // ----- Public Functions --------------------
+
     size() {
         return this.state.cards.length;
     }
@@ -20,8 +54,8 @@ class Hand extends React.Component {
 
     getNotSelected() {
         const notSelected = [];
-        for(let i = 0; i < 5; i++) {
-            if(this.state.selected.indexOf(i) === -1)
+        for (let i = 0; i < 5; i++) {
+            if (this.state.selected.indexOf(i) === -1)
                 notSelected.push(this.state.cards[i]);
         }
         return notSelected;
@@ -54,35 +88,8 @@ class Hand extends React.Component {
         return card;
     }
 
-    render() {
-        const cards = this.state.cards;
 
-        const renderCards = () => {
-            const output = [];
-            for (let i = 0; i < cards.length; i++) {
-                const {front, back} = cards[i];
-                const graphic = this.props.player ? front : back;
-                const isSelected = this.state.selected.indexOf(i) !== -1;
-                const card =
-                    <div className={"card spread" + (isSelected ? " selected" : "")} key={i}>
-                        <img src={'/images/cards/' + graphic}
-                             className="card" alt="card"
-                             onClick={
-                                 this.props.onSelected
-                                     ? () => this.props.onSelected(i)
-                                     : null}/>
-                    </div>;
-                output.push(card);
-            }
-            return output;
-        };
-
-        return (
-            <div id={`${this.props.id}`} className='hand'>
-                {renderCards()}
-            </div>
-        );
-    }
+    // ----- Interface Functions --------------------
 
     setSelectedCards = (selected) => {
         this.setState({selected: selected.slice()});

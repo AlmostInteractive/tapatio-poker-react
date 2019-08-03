@@ -1,4 +1,5 @@
 import React from 'react';
+import './Score.css';
 
 class Score extends React.Component {
     constructor(props) {
@@ -8,6 +9,16 @@ class Score extends React.Component {
             score: 0
         };
     }
+
+    render() {
+        return (
+            <div id={`${this.props.id}`} className="score">
+                score: {this.state.score}
+            </div>
+        );
+    }
+
+    // ----- Public Functions --------------------
 
     reset() {
         this.setState({
@@ -24,14 +35,6 @@ class Score extends React.Component {
             score: Math.max(0, this.state.score + amount)
         });
         this.forceUpdate();
-    }
-
-    render() {
-        return (
-            <div id={`${this.props.id}`} className="score">
-                score: {this.state.score}
-            </div>
-        );
     }
 }
 

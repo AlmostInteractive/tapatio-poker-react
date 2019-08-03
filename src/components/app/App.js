@@ -49,7 +49,6 @@ class App extends React.Component {
         };
     }
 
-
     componentDidMount() {
         this.startNewGame();
     }
@@ -120,6 +119,9 @@ class App extends React.Component {
         );
     }
 
+
+    // ----- Internal Functions --------------------
+
     startNewGame() {
         this.setGameState(GameState.SelectHand);
     };
@@ -168,6 +170,9 @@ class App extends React.Component {
                 break;
 
             case GameState.TallyPoints:
+                this.player.battle.current.reset();
+                this.cpu.battle.current.reset();
+
                 let playerPoints = this.player.points.current.value();
                 let cpuPoints = this.cpu.points.current.value();
 
@@ -230,6 +235,10 @@ class App extends React.Component {
 
             case GameState.PlayCards:
                 this.selectCards(cardIndex, 1);
+                break;
+
+            default:
+                // do nothing
                 break;
         }
     };

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Battle.css';
 import Config from '../../Config';
 
 class Battle extends React.Component {
@@ -25,6 +26,17 @@ class Battle extends React.Component {
                 <img src={'/images/cards/' + front} className="card" alt="card"/>
             </div>
         );
+    }
+
+
+    // ----- Public Functions --------------------
+
+    reset() {
+        this.setState({
+            card: null,
+            winner: false,
+            tie: false
+        });
     }
 
     setCardAndResults(card, winner, tie) {

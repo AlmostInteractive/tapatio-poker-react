@@ -9,15 +9,6 @@ class Discard extends React.Component {
         };
     }
 
-    addCards(cardsToAdd) {
-        const cards = this.state.cards.concat(cardsToAdd);
-        this.setState({cards: cards})
-    }
-
-    reset() {
-        this.setState({cards: []})
-    }
-
     render() {
         const cards = this.state.cards;
 
@@ -39,6 +30,18 @@ class Discard extends React.Component {
                 {renderCards()}
             </div>
         );
+    }
+
+
+    // ----- Public Functions --------------------
+
+    reset() {
+        this.setState({cards: []})
+    }
+
+    addCards(cardsToAdd) {
+        const cards = this.state.cards.concat(cardsToAdd);
+        this.setState({cards: cards})
     }
 }
 

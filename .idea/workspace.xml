@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd410d3e-99d1-41bf-904a-7ee8e984130e" name="Default Changelist" comment="" />
+    <list default="true" id="fd410d3e-99d1-41bf-904a-7ee8e984130e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/battle/Battle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/deck/Deck.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/discard/Discard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/hand/Hand.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/played/Played.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/points/Points.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/score/Score.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/battle/Battle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/battle/Battle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/deck/Deck.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/deck/Deck.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/discard/Discard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/discard/Discard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/hand/Hand.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hand/Hand.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/played/Played.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/played/Played.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/points/Points.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/points/Points.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/score/Score.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/score/Score.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,13 +30,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1OpWdEeCbyXiwoP5gpAZ1OeAXAQ" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -79,10 +102,22 @@
       <workItem from="1564675106261" duration="1303000" />
       <workItem from="1564677204119" duration="4728000" />
       <workItem from="1564700821468" duration="25188000" />
+      <workItem from="1564846590876" duration="844000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Played.css';
 
 class Played extends React.Component {
     constructor(props) {
@@ -7,16 +8,6 @@ class Played extends React.Component {
         this.state = {
             cards: []
         };
-    }
-
-    addCard(card) {
-        const cards = this.state.cards.slice();
-        cards.push(card);
-        this.setState({cards: cards})
-    }
-
-    reset() {
-        this.setState({cards: []})
     }
 
     render() {
@@ -40,6 +31,19 @@ class Played extends React.Component {
                 {renderCards()}
             </div>
         );
+    }
+
+
+    // ----- Public Functions --------------------
+
+    reset() {
+        this.setState({cards: []})
+    }
+
+    addCard(card) {
+        const cards = this.state.cards.slice();
+        cards.push(card);
+        this.setState({cards: cards})
     }
 }
 

@@ -1,0 +1,14 @@
+.discard {
+    position: absolute;
+    width: 117px;
+    height: 97px;
+    left: 0;
+}
+
+#my_discard {
+    bottom: 80px;
+}
+
+#cpu_discard {
+    top: 80px;
+}

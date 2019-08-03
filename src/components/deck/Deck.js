@@ -1,4 +1,5 @@
 import React from 'react';
+import './Deck.css';
 
 class Deck extends React.Component {
     constructor(props) {
@@ -28,7 +29,8 @@ class Deck extends React.Component {
         );
     }
 
-    // ----- Public Methods --------------------
+
+    // ----- Public Functions --------------------
 
     draw(quantity) {
         if (quantity <= 0)
