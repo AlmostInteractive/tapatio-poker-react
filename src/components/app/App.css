@@ -1,0 +1,59 @@
+button {
+    padding: 10px 50px;
+    font-size: 18px;
+}
+
+#game_board {
+    width: 850px;
+    height: 400px;
+    margin: 30px auto 20px;
+    position: relative;
+    background-image: url(/images/table.jpg);
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+.card {
+    width: 73px;
+    height: 97px;
+}
+
+.card.spread {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.card.selected {
+    -webkit-box-shadow: 0 0 10px #f00;
+    -moz-box-shadow: 0 0 10px #f00;
+    box-shadow: 0 0 10px #f00;
+    position: relative;
+    top: -10px;
+}
+
+.stacked {
+    position: absolute;
+}
+
+#game_over {
+    font-size: 50px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid black;
+    padding: 15px 50px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+}
