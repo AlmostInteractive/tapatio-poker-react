@@ -1,0 +1,183 @@
+button {
+    padding: 10px 50px;
+    font-size: 18px;
+}
+
+#game_board {
+    width: 850px;
+    height: 400px;
+    margin: 30px auto 20px;
+    position: relative;
+    background-image: url(/images/table.jpg);
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+.card {
+    width: 73px;
+    height: 97px;
+}
+
+.card.spread {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.card.selected {
+    -webkit-box-shadow: 0 0 10px #f00;
+    -moz-box-shadow: 0 0 10px #f00;
+    box-shadow: 0 0 10px #f00;
+    position: relative;
+    top: -10px;
+}
+
+.stacked {
+    position: absolute;
+}
+
+.hand {
+    position: absolute;
+    width: 415px;
+    height: 97px;
+    text-align: center;
+    left: 140px
+}
+
+.battle {
+    position: absolute;
+    width: 79px;
+    height: 97px;
+    left: 240px;
+}
+
+.discard {
+    position: absolute;
+    width: 117px;
+    height: 97px;
+    left: 0;
+}
+
+.points {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+    left: 50%;
+}
+
+.points .final {
+    color: red;
+}
+
+.score {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    right: 180px;
+}
+
+.played {
+    position: absolute;
+    width: 282px;
+    height: 97px;
+    right: 0;
+}
+
+.battle_result {
+    font-size: 24px;
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 0 15px;
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+#deck {
+    position: absolute;
+    width: 87px;
+    height: 97px;
+    top: 50%;
+    right: 300px;
+    transform: translateY(-50%);
+}
+
+#my_hand {
+    bottom: 0;
+}
+
+#cpu_hand {
+    top: 0;
+}
+
+#my_battle {
+    bottom: 100px;
+}
+
+#cpu_battle {
+    top: 100px;
+}
+
+#my_discard {
+    bottom: 80px;
+}
+
+#cpu_discard {
+    top: 80px;
+}
+
+#my_points {
+    bottom: 110px;
+}
+
+#cpu_points {
+    top: 110px;
+}
+
+#my_score {
+    bottom: 8px;
+}
+
+#cpu_score {
+    top: 8px;
+}
+
+#my_played {
+    bottom: 50px;
+}
+
+#cpu_played {
+    top: 50px;
+}
+
+#game_over {
+    font-size: 50px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid black;
+    padding: 15px 50px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+}
