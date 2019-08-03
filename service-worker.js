@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tapatio-poker-react/precache-manifest.a6f9c93de912fdb4cc6eff09b2e7d41b.js"
+  "/tapatio-poker-react/precache-manifest.8f272bac87d2c5c7a80753389cce890e.js"
 );
 
 self.addEventListener('message', (event) => {
