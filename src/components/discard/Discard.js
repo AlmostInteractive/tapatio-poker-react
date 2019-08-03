@@ -1,4 +1,5 @@
 import React from 'react';
+import Config from "../../Config";
 
 class Discard extends React.Component {
     constructor(props) {
@@ -18,7 +19,7 @@ class Discard extends React.Component {
                 const {back} = cards[i];
                 const card =
                     <div className="card stacked" style={{right: (i * 5) + 'px'}} key={i}>
-                        <img src={'/images/cards/' + back} className="card" alt="card"/>
+                        <img src={Config.imagesDir + back} className="card" alt="card"/>
                     </div>;
                 output.push(card);
             }

@@ -23,7 +23,7 @@ class Battle extends React.Component {
             <div id={`${this.props.id}`} className="battle">
                 {this.state.winner ? <div className="battle_result">Winner!</div> : ''}
                 {this.state.tie ? <div className="battle_result">Tie...</div> : ''}
-                <img src={'/images/cards/' + front} className="card" alt="card"/>
+                <img src={Config.imagesDir + front} className="card" alt="card"/>
             </div>
         );
     }

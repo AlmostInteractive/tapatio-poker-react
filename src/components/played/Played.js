@@ -1,5 +1,6 @@
 import React from 'react';
 import './Played.css';
+import Config from "../../Config";
 
 class Played extends React.Component {
     constructor(props) {
@@ -19,7 +20,7 @@ class Played extends React.Component {
                 const {front} = cards[i];
                 const card =
                     <div className="card stacked" style={{left: (i * 15) + 'px'}} key={i}>
-                        <img src={'/images/cards/' + front} className="card" alt="card"/>
+                        <img src={Config.imagesDir + front} className="card" alt="card"/>
                     </div>;
                 output.push(card);
             }

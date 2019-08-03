@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hand.css';
+import Config from "../../Config";
 
 class Hand extends React.Component {
     constructor(props) {
@@ -22,7 +23,7 @@ class Hand extends React.Component {
                 const isSelected = this.state.selected.indexOf(i) !== -1;
                 const card =
                     <div className={"card spread" + (isSelected ? " selected" : "")} key={i}>
-                        <img src={'/images/cards/' + graphic}
+                        <img src={Config.imagesDir + graphic}
                              className="card" alt="card"
                              onClick={
                                  this.props.onSelected

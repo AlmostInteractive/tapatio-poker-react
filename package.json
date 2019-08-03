@@ -1,7 +1,7 @@
 {
   "name": "tapatio-poker-react",
   "version": "1.0.0",
-  "homepage":"https://almostinteractive.github.io/tapatio-poker-react",
+  "homepage": "https://almostinteractive.github.io/tapatio-poker-react",
   "private": false,
   "dependencies": {
     "react": "^16.8.6",
@@ -9,7 +9,7 @@
     "react-scripts": "3.0.1"
   },
   "devDependencies": {
-    "gh-pages": "^2.1.0"
+    "gh-pages": "2.0"
   },
   "scripts": {
     "start": "react-scripts start",

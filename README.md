@@ -11,4 +11,4 @@ A simple card game that can be played with a standard 52 card deck. This version
 
 ## Play now
 
-Coming as soon as I push to github pages.
+https://almostinteractive.github.io/tapatio-poker-react/

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Deck.css';
+import Config from "../../Config";
 
 class Deck extends React.Component {
     constructor(props) {
@@ -13,7 +14,7 @@ class Deck extends React.Component {
         const renderCardStack = () => {
             const output = [];
             for (let i = 0; i < parseInt(this.size() / 5); i++) {
-                const card = <img src="/images/cards/b.gif" className="card stacked"
+                const card = <img src={Config.imagesDir + 'b.gif'} className="card stacked"
                                   style={{right: (i * 2) + 'px', bottom: i + 'px'}}
                                   key={i}
                                   alt="card"/>;
