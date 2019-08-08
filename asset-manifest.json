@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/tapatio-poker-react/static/css/main.83a79413.chunk.css",
-    "main.js": "/tapatio-poker-react/static/js/main.f36c87ba.chunk.js",
-    "main.js.map": "/tapatio-poker-react/static/js/main.f36c87ba.chunk.js.map",
+    "main.css": "/tapatio-poker-react/static/css/main.e4bbbda0.chunk.css",
+    "main.js": "/tapatio-poker-react/static/js/main.6936e316.chunk.js",
+    "main.js.map": "/tapatio-poker-react/static/js/main.6936e316.chunk.js.map",
     "runtime~main.js": "/tapatio-poker-react/static/js/runtime~main.61cf3600.js",
     "runtime~main.js.map": "/tapatio-poker-react/static/js/runtime~main.61cf3600.js.map",
-    "static/js/2.d6a534e5.chunk.js": "/tapatio-poker-react/static/js/2.d6a534e5.chunk.js",
-    "static/js/2.d6a534e5.chunk.js.map": "/tapatio-poker-react/static/js/2.d6a534e5.chunk.js.map",
+    "static/js/2.b85788d6.chunk.js": "/tapatio-poker-react/static/js/2.b85788d6.chunk.js",
+    "static/js/2.b85788d6.chunk.js.map": "/tapatio-poker-react/static/js/2.b85788d6.chunk.js.map",
     "index.html": "/tapatio-poker-react/index.html",
-    "precache-manifest.284c3f9c52b229551370c3f5e5d7e1ee.js": "/tapatio-poker-react/precache-manifest.284c3f9c52b229551370c3f5e5d7e1ee.js",
+    "precache-manifest.9bae1473b46bb576f437f7238f2e4c9f.js": "/tapatio-poker-react/precache-manifest.9bae1473b46bb576f437f7238f2e4c9f.js",
     "service-worker.js": "/tapatio-poker-react/service-worker.js",
-    "static/css/main.83a79413.chunk.css.map": "/tapatio-poker-react/static/css/main.83a79413.chunk.css.map"
+    "static/css/main.e4bbbda0.chunk.css.map": "/tapatio-poker-react/static/css/main.e4bbbda0.chunk.css.map"
   }
 }
