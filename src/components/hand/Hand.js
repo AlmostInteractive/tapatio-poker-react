@@ -1,101 +1,34 @@
 import React from 'react';
+import {observer} from 'mobx-react';
 import './Hand.css';
-import Config from "../../Config";
-
-class Hand extends React.Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            cards: [],
-            selected: []
-        };
-    }
-
-    render() {
-        const cards = this.state.cards;
-
-        const renderCards = () => {
-            const output = [];
-            for (let i = 0; i < cards.length; i++) {
-                const {front, back} = cards[i];
-                const graphic = this.props.player ? front : back;
-                const isSelected = this.state.selected.indexOf(i) !== -1;
-                const card =
-                    <div className={"card spread" + (isSelected ? " selected" : "")} key={i}>
-                        <img src={Config.imagesDir + graphic}
-                             className="card" alt="card"
-                             onClick={
-                                 this.props.onSelected
-                                     ? () => this.props.onSelected(i)
-                                     : null}/>
-                    </div>;
-                output.push(card);
-            }
-            return output;
-        };
-
-        return (
-            <div id={`${this.props.id}`} className='hand'>
-                {renderCards()}
-            </div>
-        );
-    }
+import Card from '../card';
 
 
-    // ----- Public Functions --------------------
+function Hand(props) {
+    const {cards, selected} = props.hand;
 
-    size() {
-        return this.state.cards.length;
-    }
-
-    setCards(cards) {
-        this.setState({cards: cards.slice()});
-    }
-
-    getNotSelected() {
-        const notSelected = [];
-        for (let i = 0; i < 5; i++) {
-            if (this.state.selected.indexOf(i) === -1)
-                notSelected.push(this.state.cards[i]);
-        }
-        return notSelected;
-    }
-
-    hold() {
-        const cards = this.state.cards;
-        const selected = new Set(this.state.selected);
-
-        for (let i = cards.length; i >= 0; i--) {
-            if (selected.has(i))
-                continue;
-            cards.splice(i, 1);
-        }
-
-        this.setState({
-            cards: cards,
-            selected: []
+    const renderCards = () => {
+        const output = [];
+        cards.forEach(({front, back}, i) => {
+            const graphic = props.player ? front : back;
+            const isSelected = selected.indexOf(i) !== -1;
+            const onSelected = props.onSelected;
+            const card = <Card key={i}
+                               index={i}
+                               isSelected={isSelected}
+                               isSpread={true}
+                               graphic={graphic}
+                               onSelected={onSelected}/>;
+            output.push(card);
         });
-    }
+        return output;
+    };
 
-    play() {
-        const cards = this.state.cards;
-        if (this.state.selected.length < 1)
-            throw new Error('Playing unselected cards');
-
-        const cardIndex = this.state.selected[0];
-        const card = cards.splice(cardIndex, 1)[0];
-        this.setState({cards: cards});
-        return card;
-    }
-
-
-    // ----- Interface Functions --------------------
-
-    setSelectedCards = (selected) => {
-        this.setState({selected: selected.slice()});
-    }
+    return (
+        <div id={`${props.id}`} className='hand'>
+            {renderCards()}
+        </div>
+    );
 }
 
-
-export default Hand;
+export default observer(Hand);

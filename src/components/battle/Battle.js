@@ -1,48 +1,21 @@
 import React from 'react';
 import './Battle.css';
-import Config from '../../Config';
-
-class Battle extends React.Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            card: null,
-            winner: false,
-            tie: false
-        };
-    }
-
-    render() {
-        if (!this.state.card)
-            return null;
-
-        const {front} = this.state.card;
-
-        return (
-            <div id={`${this.props.id}`} className="battle">
-                {this.state.winner ? <div className="battle_result">Winner!</div> : ''}
-                {this.state.tie ? <div className="battle_result">Tie...</div> : ''}
-                <img src={Config.imagesDir + front} className="card" alt="card"/>
-            </div>
-        );
-    }
+import Card from '../card';
 
 
-    // ----- Public Functions --------------------
+function Battle(props) {
+    if (!props.card)
+        return null;
 
-    reset() {
-        this.setState({
-            card: null,
-            winner: false,
-            tie: false
-        });
-    }
+    const {front} = props.card;
 
-    setCardAndResults(card, winner, tie) {
-        this.setState({card: card});
-        setTimeout(() => this.setState({winner: winner, tie: tie}), Config.battleTime);
-    }
+    return (
+        <div id={`${props.id}`} className="battle">
+            {props.winner ? <div className="battle_result">Winner!</div> : ''}
+            {props.tie ? <div className="battle_result">Tie...</div> : ''}
+            <Card graphic={front}/>
+        </div>
+    );
 }
 
 export default Battle;

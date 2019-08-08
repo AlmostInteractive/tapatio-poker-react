@@ -1,50 +1,17 @@
-import React from 'react';
 import './Played.css';
-import Config from "../../Config";
+import CardStack from '../cardStack';
 
-class Played extends React.Component {
-    constructor(props) {
-        super(props);
+class Played extends CardStack {
+    getGraphic = ({front}) => {
+        return front;
+    };
 
-        this.state = {
-            cards: []
-        };
-    }
+    getStyleFor = (i) => {
+        return {left: (i * 15) + 'px'};
+    };
 
-    render() {
-        const cards = this.state.cards;
-
-        const renderCards = () => {
-            const output = [];
-            for (let i = 0; i < cards.length; i++) {
-                const {front} = cards[i];
-                const card =
-                    <div className="card stacked" style={{left: (i * 15) + 'px'}} key={i}>
-                        <img src={Config.imagesDir + front} className="card" alt="card"/>
-                    </div>;
-                output.push(card);
-            }
-            return output;
-        };
-
-        return (
-            <div id={`${this.props.id}`} className="played">
-                {renderCards()}
-            </div>
-        );
-    }
-
-
-    // ----- Public Functions --------------------
-
-    reset() {
-        this.setState({cards: []})
-    }
-
-    addCard(card) {
-        const cards = this.state.cards.slice();
-        cards.push(card);
-        this.setState({cards: cards})
+    getClassName = () => {
+        return 'played';
     }
 }
 
