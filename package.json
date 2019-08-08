@@ -4,12 +4,16 @@
   "homepage": "https://almostinteractive.github.io/tapatio-poker-react",
   "private": false,
   "dependencies": {
+    "mobx": "^5.13.0",
+    "mobx-react": "^6.1.1",
+    "mobx-state-tree": "^3.14.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
   },
   "devDependencies": {
-    "gh-pages": "2.0"
+    "gh-pages": "2.0",
+    "mobx-devtools-mst": "^0.9.21"
   },
   "scripts": {
     "start": "react-scripts start",

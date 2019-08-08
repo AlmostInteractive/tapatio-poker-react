@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Provider} from 'mobx-react';
 import './index.css';
-import App from './components/app';
+import App from './containers/app';
 import * as serviceWorker from './serviceWorker';
+import GameStore from './models/GameStore';
+//debugging tools
+//import {onPatch} from 'mobx-state-tree';
+//import makeInspectable from 'mobx-devtools-mst';
 
-Array.prototype.shuffle = function() {
+Array.prototype.shuffle = function () {
     // Fisher-Yates shuffle
     let currentIndex = this.length, temporaryValue, randomIndex;
 
@@ -23,7 +28,19 @@ Array.prototype.shuffle = function() {
     return this;
 };
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const store = GameStore.create({});
+// makeInspectable(store);
+//
+// onPatch(store, patch => {
+//     console.log(patch)
+// });
+
+ReactDOM.render(
+    <Provider store={store}>
+        <App/>
+    </Provider>, document.getElementById('root')
+);
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
